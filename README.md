@@ -1,145 +1,83 @@
-🚑 Emergency Response System (SOS Alert)
+# 🚑 Emergency Response System – React.js + Flask + MongoDB
 
-An AI-powered emergency response platform designed to accelerate accident reporting and rescue efforts.Built with React (Frontend), Flask (Backend API), and MongoDB (Database), the system supports real-time location sharing, injury reporting, and accident scene analysis for both Emergency Responders and Ambulance Drivers.
+A full-stack emergency response platform built with **React.js** (frontend), **Flask** (backend), and **MongoDB** (database) that accelerates accident reporting and rescue coordination through real-time SOS alerts and smart accident analysis.
 
-🌟 Key Features
+This project enables users to instantly trigger SOS alerts, report accident scenes, and assist emergency responders and ambulance drivers with detailed situational awareness.
 
-SOS Button: Instantly alert emergency services with your location.
+---
 
-Accident Scene Reporting: Upload images and describe accident scenarios.
+## 📌 Overview
 
-Emergency Responder View:
+The Emergency Response System allows users to:
+- Tap an SOS button to immediately alert emergency services with live location
+- Upload accident scene images and describe incidents
+- View severity assessments and reported injuries
+- Enable responders and ambulance drivers to access real-time accident data
 
-See real-time alerts with accident severity assessment.
+It provides a responsive, mobile-friendly UI, secure API integrations, and dynamic data handling using a scalable NoSQL backend.
 
-View reported injuries and location on a map.
+---
 
-Ambulance Driver View:
+## 🛠️ Tech Stack
 
-Navigate to accident sites with live updates.
+### 🌐 Frontend
+- React.js 18
+- React Router
+- TailwindCSS
+- Vite
 
-View injury reports and critical accident details.
+### ⚙️ Backend
+- Flask (Python)
+- RESTful APIs
+- Geolocation & Image Upload Handling
 
-Smart Injury Analysis: Automatically assess accident severity based on uploaded data.
+### 🗄️ Database
+- MongoDB Atlas
 
-🏐 Tech Stack
+### 🔧 Tools
+- npm
+- pip
+- GitHub Pages (optional frontend deployment)
 
-Frontend
+---
 
-Backend
+## ✨ Features
 
-Database
+- **SOS Alert**: Immediate location-based SOS trigger to emergency responders
+- **Accident Scene Reporting**: Upload images and provide incident descriptions
+- **Responder Dashboard**: View alerts, injury reports, and scene photos
+- **Driver Dashboard**: Navigation and emergency details for ambulance drivers
+- **Smart Severity Assessment**: Analyze reported injuries and accident severity
 
-ReactJS
+---
 
-Flask
+## 🖼️ Screenshots
 
-MongoDB Atlas
+### 🚨 SOS Button View
+![SOS Button View](screenshots/sos-button.png)
 
-Frontend: React 18, TailwindCSS, React Router
+### 📝 Accident Reporting Form
+![Accident Report Form](screenshots/accident-report.png)
 
-Backend: Python Flask API with location & image processing
+### 🛡️ Emergency Responder Dashboard
+![Responder Dashboard](screenshots/responder-dashboard.png)
 
-Database: MongoDB for real-time accident and user data
+---
 
-🖥️ Project Views
+## 📚 API Endpoints
 
-SOS Button View
+| Method | Endpoint | Description |
+|:------:|:--------:|:-----------:|
+| POST | `/api/sos` | Trigger SOS alert with location and details |
+| GET | `/api/alerts` | Retrieve active SOS alerts |
+| POST | `/api/upload` | Upload accident scene images |
+| GET | `/api/alerts/:id` | Fetch detailed accident report |
 
-Accident Report View
+---
 
-Emergency Responder Dashboard
+## 🚀 Getting Started
 
-
-
-
-
-
-
-📸 Add your screenshots inside a /screenshots/ folder in your repo.
-
-🚀 Getting Started
-
-1. Clone the Repository
-
+### 1. Clone the Repository
+```bash
 git clone https://github.com/your-username/sos-emergency-system.git
 cd sos-emergency-system
-
-2. Frontend Setup (React)
-
-cd frontend
-npm install
-npm run dev
-
-Runs locally on http://localhost:5173
-
-3. Backend Setup (Flask)
-
-cd backend
-pip install -r requirements.txt
-python app.py
-
-Runs locally on http://localhost:5000
-
-4. Environment Variables
-
-Create .env files in frontend and backend directories.
-
-Frontend (frontend/.env)
-
-VITE_API_URL=http://localhost:5000
-
-Backend (backend/.env)
-
-MONGO_URI=your_mongodb_connection_string
-SECRET_KEY=your_secret_key
-
-📚 API Endpoints
-
-Method
-
-Endpoint
-
-Description
-
-POST
-
-/api/sos
-
-Send SOS alert with location & injury details
-
-GET
-
-/api/alerts
-
-Fetch active SOS alerts
-
-POST
-
-/api/upload
-
-Upload accident scene image
-
-GET
-
-/api/alerts/:id
-
-Get accident details by ID
-
-📈 Future Enhancements
-
-AI-based injury severity detection from images
-
-Real-time ambulance location tracking
-
-SMS/Call API integration for non-app users
-
-Admin panel for monitoring all incidents
-
-🤝 Contributing
-
-Pull requests are welcome!For major changes, please open an issue first to discuss what you would like to change.
-
-📄 License
-
-This project is licensed under the MIT License.See the LICENSE file for details.

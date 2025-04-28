@@ -54,13 +54,13 @@ It provides a responsive, mobile-friendly UI, secure API integrations, and dynam
 ## 🖼️ Screenshots
 
 ### 🚨 SOS Button View
-![SOS Button View](screenshots/sos-button.png)
+![SOS Button View](images/sos-button.png)
 
 ### 📝 Accident Reporting Form
-![Accident Report Form](screenshots/accident-report.png)
+![Accident Report Form](images/accident-report.png)
 
 ### 🛡️ Emergency Responder Dashboard
-![Responder Dashboard](screenshots/responder-dashboard.png)
+![Responder Dashboard](images/responder-dashboard.png)
 
 ---
 
